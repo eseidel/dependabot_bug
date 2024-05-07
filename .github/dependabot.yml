@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      gha-deps:
+        patterns:
+          - "*"
+  - package-ecosystem: "pub"
+    directory: "/packages/example"
+    schedule:
+      interval: "weekly"
+    groups:
+      bigquery_api-deps:
+        patterns:
+          - "*"
+  - package-ecosystem: gitsubmodule
+    schedule:
+        interval: "daily"
+    directory: /

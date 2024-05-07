@@ -1,0 +1,3 @@
+[submodule "dependabot_bug_sub"]
+	path = dependabot_bug_sub
+	url = https://github.com/eseidel/dependabot_bug_sub
